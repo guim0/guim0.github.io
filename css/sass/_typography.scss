@@ -6,80 +6,76 @@ h5,
 h6,
 a,
 p {
-  font-family: "Inconsolata", monospace;
-  color: #ffffff;
-  font-weight: 400;
-  text-decoration: none;
+    font-family: "Inconsolata", monospace;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .link {
-  text-decoration: none;
-  padding: 10px 24px;
-  font-size: 23px;
-  transition: 0.3s ease;
-  position: relative;
-  &::after {
-    content: "";
-    display: block;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    width: 0%;
-    height: 2px;
-
-    transform: translate(15%, -50%);
-    transition: .10s ease;
-    background-color: #ffffff;
-  }
-  &:hover {
-    opacity: 0.8;
-
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 23px;
+    transition: 0.3s ease;
+    position: relative;
     &::after {
-     width: 80%;
-      }
-  }
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        transform: translate(15%, -50%);
+        transition: .10s ease;
+        background-color: #ffffff;
+    }
+    &:hover {
+        opacity: 0.8;
+        &::after {
+            width: 80%;
+        }
+    }
 }
 
 h1 {
-  font-size: 82px;
+    font-size: 45px;
 }
 
 h2 {
-  font-size: 75px;
+    font-size: 40px;
 }
+
 h3 {
-  font-size: 62px;
+    font-size: 30px;
 }
+
 h4 {
-  font-size: 31px;
+    font-size: 24px;
 }
+
 h5 {
-  font-size: 28px;
+    font-size: 14px;
 }
+
 h6 {
-  font-size: 16px;
+    font-size: 8px;
 }
 
 @media screen and (max-width: 1200px) {
-    h1{
-        font-size: 70px;
+    h1 {
+        font-size: 50px;
     }
-
-    h2{
-        font-size: 60px;
-
+    h2 {
+        font-size: 40px;
     }
 }
 
 @media screen and (max-width: 680px) {
-  h1{
-      font-size: 60px;
-  }
-
-  h2{
-      font-size: 50px;
-
-  }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 50px;
+    }
 }
